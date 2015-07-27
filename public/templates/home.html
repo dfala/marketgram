@@ -1,0 +1,59 @@
+<section class="home">
+
+	<div class="container">
+		<h2>Instagrammer Sign Up</h2>
+		<form ng-submit="createUser(seller)">
+			<input type="text" ng-model="seller.name" placeholder="Name"
+				   class="form-control" focus-here required/>
+
+		   <input type="text" ng-model="seller.instagramAccount" placeholder="Link to Instagram Account"
+				   class="form-control" required/>
+
+			<input type="text" ng-model="seller.email" placeholder="Email"
+				   class="form-control" required/>
+
+			<input type="password" ng-model="seller.password" placeholder="Password"
+				   class="form-control" required/>
+
+			<button class="btn btn-default">Register</button>
+		</form>
+
+		<div style="width: 100%; height: 10rem;"></div>
+
+
+		<h2>Buyer Sign Up</h2>
+		<form ng-submit="createUser(newUser)">
+			<input type="text" ng-model="newUser.name" placeholder="Name"
+				   class="form-control" required/>
+
+			<input type="text" ng-model="newUser.email" placeholder="Email"
+				   class="form-control" required/>
+
+			<input type="password" ng-model="newUser.password" placeholder="Password"
+				   class="form-control" required/>
+
+			<button class="btn btn-default">Register</button>
+		</form>
+
+
+		<div style="width: 100%; height: 10rem;"></div>
+
+		<h2>User Login</h2>
+		<form ng-submit="login(oldUser)">
+			<input class="inline form-control"
+				   placeholder="email" type="email"
+				   ng-model="oldUser.email" required/>
+
+			<input class="inline form-control"
+				   placeholder="password" type="password"
+				   ng-model="oldUser.password" required/>
+
+			<button class="inline btn btn-default">Log in</button>
+		</form>
+
+		<div style="width: 100%; height: 10rem;"></div>
+	</div>
+
+
+
+</section>

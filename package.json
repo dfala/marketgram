@@ -1,0 +1,39 @@
+{
+  "name": "marketgram",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfala/marketgram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfala/marketgram/issues"
+  },
+  "homepage": "https://github.com/dfala/marketgram",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.13.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "mandrill-api": "^1.0.45",
+    "mongoose": "^4.0.8",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "jit-grunt": "^0.9.1",
+    "less": "^2.5.1"
+  }
+}

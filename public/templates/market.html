@@ -1,0 +1,35 @@
+<div class="container">
+
+	<div ng-repeat="user in users">
+		Name: {{user.name}}
+		<br>
+		Instagram Account: <a ng-href="{{user.instagramAccount}}" target="_blank">{{user.instagramAccount}}</a>
+		<br>
+		<button class="btn btn-default" ng-click="openModal(user)">Send {{user.name}} an email</button>
+		<hr>
+	</div>
+
+</div>
+
+
+
+<!-- MODAL -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact instagrammer</h4>
+      </div>
+      <div class="modal-body">
+        
+      	<form ng-submit="sendEmail()">
+      		<textarea class="form-control" ng-model="email.content"></textarea>
+      		<br>
+      		<button class="btn btn-default">Send Email</button>
+      	</form>
+
+      </div>
+    </div>
+  </div>
+</div>
